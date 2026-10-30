@@ -12,7 +12,7 @@ namespace GeekStoreJS
 
             while (opcion != "5")
             {
-                Console.WriteLine("\n      GEEK STORE     ");
+                Console.WriteLine("      GEEK STORE     ");
                 Console.WriteLine("1. Ver inventario y saldo de caja");
                 Console.WriteLine("2. Añadir un nuevo comic");
                 Console.WriteLine("3. Añadir nuevo merchandising");
