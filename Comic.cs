@@ -9,9 +9,7 @@ namespace GeekStoreJS
         public int Volumen { get; set; }
         public bool EsVariante { get; set; }
 
-        public Comic(int id, string nombre, double precioCosto,
-                     double precioVenta, int stock, int volumen,
-                     bool esVariante)
+        public Comic(int id, string nombre, double precioCosto,double precioVenta, int stock, int volumen,bool esVariante)
             : base(id, nombre, precioCosto, precioVenta, stock)
         {
             Volumen = volumen;
@@ -32,7 +30,7 @@ namespace GeekStoreJS
 
         public override void MostrarDetalles()
         {
-            Console.WriteLine("===== COMIC =====");
+            Console.WriteLine("      COMIC     ");
             Console.WriteLine("ID: " + ID);
             Console.WriteLine("Nombre: " + Nombre);
             Console.WriteLine("Precio Costo: " + PrecioCosto);
@@ -40,7 +38,7 @@ namespace GeekStoreJS
             Console.WriteLine("Stock: " + Stock);
             Console.WriteLine("Volumen: " + Volumen);
             Console.WriteLine("Es Variante: " + (EsVariante ? "Si" : "No"));
-            Console.WriteLine("=================");
+
         }
     }
 }

@@ -122,7 +122,6 @@ namespace GeekStoreJS
             }
 
             double totalVenta = producto.CalcularTotalVenta(cantidadAVender);
-
             articuloEncontrado.Stock -= cantidadAVender;
             SaldoCaja += totalVenta;
 

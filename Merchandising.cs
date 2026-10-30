@@ -9,9 +9,7 @@ namespace GeekStoreJS
         public string Tipo { get; set; }
         public string Talla { get; set; }
 
-        public Merchandising(int id, string nombre, double precioCosto,
-                             double precioVenta, int stock, string tipo,
-                             string talla)
+        public Merchandising(int id, string nombre, double precioCosto, double precioVenta, int stock, string tipo, string talla)
             : base(id, nombre, precioCosto, precioVenta, stock)
         {
             Tipo = tipo;
@@ -25,7 +23,7 @@ namespace GeekStoreJS
 
         public override void MostrarDetalles()
         {
-            Console.WriteLine("===== MERCHANDISING =====");
+            Console.WriteLine("      MERCHANDISING      ");
             Console.WriteLine("ID: " + ID);
             Console.WriteLine("Nombre: " + Nombre);
             Console.WriteLine("Precio Costo: " + PrecioCosto);
@@ -33,7 +31,7 @@ namespace GeekStoreJS
             Console.WriteLine("Stock: " + Stock);
             Console.WriteLine("Tipo: " + Tipo);
             Console.WriteLine("Talla: " + Talla);
-            Console.WriteLine("=========================");
+
         }
     }
 }
